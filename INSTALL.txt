@@ -1,0 +1,26 @@
+Option 1: install executable binary
+
+- download from webpage http://fmv.jku.at/limboole/
+- move binary to a directory e.g. /path/to/limbole
+- open a command line terminal
+- change directory to /path/to/limbole
+
+$ cd /path/to/limbole
+- make the binary executable
+$ chmod u+x limbooleOSX
+
+Option 2: install from source
+	2.1: download source from http://fmv.jku.at/limboole/
+	2.2: clone from https://github.com/maximaximal/limboole
+	
+- needs knowledge to find it out
+
+# https://cmake.org/cmake/help/latest/manual/cmake.1.html#description
+$ mkdir build ; cd build
+$ cmake ../
+$ cd build
+$ cmake .
+$ make
+[some compiler warnings]
+$ make install
+$ ./limboole -h # try it
